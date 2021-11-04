@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>mguidez.com/education/</loc>
+    <loc>/education/</loc>
     <lastmod>2021-11-04T18:13:10+01:00</lastmod>
   </url><url>
-    <loc>mguidez.com/languages/</loc>
+    <loc>/languages/</loc>
     <lastmod>2021-11-04T18:13:10+01:00</lastmod>
   </url><url>
-    <loc>mguidez.com/experience/</loc>
+    <loc>/experience/</loc>
     <lastmod>2021-11-04T18:13:10+01:00</lastmod>
   </url><url>
-    <loc>mguidez.com/sports/</loc>
+    <loc>/sports/</loc>
     <lastmod>2021-11-04T18:13:10+01:00</lastmod>
   </url><url>
-    <loc>mguidez.com/travels/</loc>
+    <loc>/travels/</loc>
     <lastmod>2021-11-04T18:13:10+01:00</lastmod>
   </url><url>
-    <loc>mguidez.com/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>mguidez.com/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>mguidez.com/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
