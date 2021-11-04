@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio Hugo</title>
+    <link>mguidez.com/</link>
+    <description>Recent content on Portfolio Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="mguidez.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Education</title>
+      <link>mguidez.com/education/</link>
+      <pubDate>Thu, 04 Nov 2021 18:13:10 +0100</pubDate>
+      
+      <guid>mguidez.com/education/</guid>
+      <description>Education 2018-NOW / INP-ENSEEIHT  A top-ranking engineering graduate school based in Toulouse, France  2018-2021 / Preparatory classes  Two-year undergraduate intensive course in mathematics and physics  2015-2018 / Highschool  BaccalaurÉAt with honours (major in mathematics and physics)  </description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>mguidez.com/languages/</link>
+      <pubDate>Thu, 04 Nov 2021 18:13:10 +0100</pubDate>
+      
+      <guid>mguidez.com/languages/</guid>
+      <description>Professional English Professional English allows me to develop my soft skills, in particular through several activities during English class such as :
+ Writing a CV Organizing, chairing and taking minutes during a meeting  LV2 German  I started learning German in primary school and continued until the end of high school.  Spanish  I have been attending the beginners&#39; course since the beginning of the school year 2021.</description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>mguidez.com/experience/</link>
+      <pubDate>Thu, 04 Nov 2021 18:13:10 +0100</pubDate>
+      
+      <guid>mguidez.com/experience/</guid>
+      <description>Experience SUMMER 2018 / SES Satellites, Luxembourg  HbbTV Application Developer Intern  2016-NOW / Freelance  Freelance work in graphic design, and web development  2015 / Agile Partner S.A, Luxembourg  Observing and participating in software developer and digital artist activities  </description>
+    </item>
+    
+    <item>
+      <title>Sports</title>
+      <link>mguidez.com/sports/</link>
+      <pubDate>Thu, 04 Nov 2021 18:13:10 +0100</pubDate>
+      
+      <guid>mguidez.com/sports/</guid>
+      <description>Sports Badminton / 2015-2018  Enrolled in UNSS (union nationale du sport scolaire) Badminton in high school.  Rowing / 2015-2016  Obtained the Silver rowing certificate. Participation in several team competitions.  Karaté / 2010-2015  Achievement of the brown belt  Tennis / 2005-2010 </description>
+    </item>
+    
+    <item>
+      <title>Travels</title>
+      <link>mguidez.com/travels/</link>
+      <pubDate>Thu, 04 Nov 2021 18:13:10 +0100</pubDate>
+      
+      <guid>mguidez.com/travels/</guid>
+      <description>Travels Travelling is one of the most important ways to discover new things and new landscapes. That&amp;rsquo;s why I love to travel, whether it&amp;rsquo;s with friends, family, or alone.
+Places i visited  Athens, Greece Tinos, Greece Pompei, Italia Roma, Italia Cologne, Germany Brusells, Belgium London, UK Amsterdam, Netherlands Paris, France  </description>
+    </item>
+    
+  </channel>
+</rss>

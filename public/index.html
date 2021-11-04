@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="generator" content="Hugo 0.89.0" />
+	<meta charset="utf-8">
+	<title>Martin Guidez</title>
+	<link rel="stylesheet" href='mguidez.com/css/style.css'>
+	<style>
+
+		#background{
+			background-color: rgba(0, 0, 0, 0.8);
+			transition: background-color .5s;
+			transition-timing-function: ease-in-out;
+		}
+
+		body{
+			background-image: url(background.gif);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			transition: color .5s;
+			transition-timing-function: ease-in-out;
+		}
+
+
+		h2 {
+		position: relative;
+		overflow: hidden;
+		}
+
+		h2 span {
+		display: inline-block;
+		vertical-align: baseline;
+		zoom: 1;
+		*display: inline;
+		*vertical-align: auto;
+		position: relative;
+		padding: 0 10px 0 0;
+		}
+
+		h2 span:before, h2 span:after {
+		content: '';
+		display: block;
+		width: 1000px;
+		position: absolute;
+		top: 0.73em;
+		border-top: 2px solid var(--color);
+		transition: border-top-color 0.5s;
+		transition-timing-function: ease-in-out;
+		}
+
+		h2 span:before {
+		right: 100%;
+		}
+
+		h2 span:after {
+		left: 100%;
+		}
+
+		#hero {
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		text-align: right;
+		height: 100vh;
+		}
+
+		#hero p {
+		margin: 0;
+		}
+
+		#about {
+		padding-top: 150px;
+		margin-bottom: 200px;
+		} 
+
+		#about h1 {
+		margin-bottom: 30px;
+		}
+
+
+
+		
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<div id="background">
+
+		<div id="topnav" class="container">
+<a href="/index.html">Home</a>
+<a href="/education">Education</a>
+<a href="/experience">Experience</a>
+<a href="/languages">Languages</a>
+<div class="dropdown">
+    <span>More</span>
+    <div class="dropdown-content">
+        <a href=/sports>Sports</a>
+        <a href="/travels">Travels</a>
+        <a href="#footer">Contact</a>
+    </div>
+    </div>
+</div>
+		<div class="sep"></div>
+
+
+		<div id="hero" class="container">
+			<h1>MARTIN,<br>ENGINEERING<br>AND DESIGN<br>ENTHUSIAST</h1>
+			<p id='sub'>I’m a 20YO engineering student based in Toulouse, France<br>looking for cool new job opportunities<br>and freelance work.</p>
+		</div>
+
+		<div id="about" class="container">
+			<h1>About</h1>
+			<p>HI ! I’M MARTIN, a french student in engineering with a passion for computer science and graphic design.<br>I love to try new things in order to learn more and improve my skills.<br>Getting involved in great projects is my thing, so if you have cool opportunities, contact me !</p>
+			<video width="100%" controls>
+				<source src="video.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			  </video> 
+			  <a target="_blank" href="CV_2021.pdf"><button class="btn" style="width:100%">DOWNLOAD MY RESUME</button></a>
+			
+		</div>
+		<div class="sep"></div>
+		<div id="footer" class="container"><span>LET'S TALK</span>
+<h1>HELLO@<br>MGUIDEZ.COM</h1>
+<span>FOLLOW ME</span>
+<div id="links">
+    <a href="https://instagram.com">INSTAGRAM</a>
+    <a href="https://www.linkedin.com/in/mguidez/">LINKEDIN</a>
+    <a href="https://github.com/m-gdz">GITHUB</a>
+</div></div>
+	</div>
+
+
+</body>	
+
+
+<script src="script.js"></script>
+</html>
+
