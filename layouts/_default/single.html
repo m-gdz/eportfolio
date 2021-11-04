@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Martin Guidez</title>
+        <link rel="stylesheet" href='{{ "css/style.css" | absLangURL }}'>
+        <style>
+
+            :root {
+            --opcolor: #F1F1F1;
+            --color : #1F1F1F;
+            }
+
+
+            body {
+                background-color: var(--opcolor); 
+                color: var(--color);
+                 
+            }
+            a, span, h1 {
+                color: var(--color);
+            }
+            
+            #content {
+                margin-top: 130px;
+                margin-bottom: 200px;
+            }
+
+            #content h1 {
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+            
+        </style>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <div id="topnav" class="container">{{ partial "partials/navbar.html" . }}</div>
+        <div class="sep"></div>
+        <div id="content" class="container">{{ .Content | safeHTML -}}</div>
+        <div class="sep"></div>
+        <div id="footer" class="container">{{ partial "partials/footer.html" . }}</div>
+
+    </body>
+
+
+</html>
