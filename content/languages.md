@@ -1,5 +1,5 @@
 ---
-title: "Education"
+title: "Languages"
 date: 2021-11-04T18:13:10+01:00
 type: "page"
 draft: false
