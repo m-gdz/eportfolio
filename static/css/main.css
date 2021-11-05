@@ -141,9 +141,7 @@ h2 {
 
 }
     
-video {
-    border: solid 2px var(--opcolor);
-} 
+
 
 @media  (max-width: 900px) {
     h1 {
