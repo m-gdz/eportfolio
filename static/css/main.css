@@ -129,7 +129,7 @@ h2 {
 #links {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 300px;
     justify-content: space-between;
 
 }
