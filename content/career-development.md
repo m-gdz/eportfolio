@@ -1,11 +1,11 @@
 ---
-title: "Careers, Leadership & Management"
+title: "Career Development"
 date: 2021-11-04T18:13:10+01:00
 type: "page"
 draft: false
 ---
 
-# Careers, Leadership & Management
+# Career Development
 
 {{< button target="_blank" class="btn btn-dark" href="https://linkedin.com/in/mguidez"  >}}Linkedin{{< /button >}}
 {{< button target="_blank" class="btn btn-dark" href="/CV_2021.pdf"  >}}Resume{{< /button >}}
