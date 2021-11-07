@@ -15,12 +15,15 @@
 		}
 
 		body{
-			background-image: url(background.gif);
+			/*background-image: url(background.gif); */
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
 			transition: color .5s;
 			transition-timing-function: ease-in-out;
+
+
+
 		}
 
 
@@ -98,6 +101,26 @@
 		}	
 
 
+		#bg {
+		  position: fixed; 
+		  z-index: -3;
+		  top: -50%; 
+		  left: -50%; 
+		  width: 200%; 
+		  height: 200%;
+		}
+
+		#bg img {
+		  position: absolute; 
+		  top: 0; 
+		  left: 0; 
+		  right: 0; 
+		  bottom: 0; 
+		  margin: auto; 
+		  min-width: 50%;
+		  min-height: 50%;
+		}
+
 		
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -107,6 +130,9 @@
 
 </head>
 <body>
+		<div id="bg">
+			<img src="background.gif" alt="">
+		</div>
 		<div id="background">
 
 			<div id="topnav" class="container">{{ partial "navbar.html" . }}</div>
