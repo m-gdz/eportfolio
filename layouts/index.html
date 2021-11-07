@@ -85,37 +85,34 @@
 		
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/18a6680942.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/18a6680942.js" crossorigin="anonymous"></script> 
 </head>
 <body>
+		<div id="background">
+
+			<div id="topnav" class="container">{{ partial "navbar.html" . }}</div>
+			<div class="sep"></div>
 
 
-	<div id="background">
+			<div id="hero" class="container">
+				<h1>MARTIN,<br>ENGINEERING<br>AND DESIGN<br>ENTHUSIAST</h1>
+				<p id='sub'>I’m a 20YO engineering student based in Toulouse, France<br>looking for cool new job opportunities<br>and freelance work.</p>
+			</div>
 
-		<div id="topnav" class="container">{{ partial "navbar.html" . }}</div>
-		<div class="sep"></div>
-
-
-		<div id="hero" class="container">
-			<h1>MARTIN,<br>ENGINEERING<br>AND DESIGN<br>ENTHUSIAST</h1>
-			<p id='sub'>I’m a 20YO engineering student based in Toulouse, France<br>looking for cool new job opportunities<br>and freelance work.</p>
+			<div id="about" class="container">
+				<h1>About</h1>
+				<p>HI ! I’M MARTIN, a french student in engineering with a passion for computer science and graphic design.<br>I love to try new things in order to learn more and improve my skills.<br>Getting involved in great projects is my thing, so if you have cool opportunities, contact me !</p>
+				<video id="video" width="100%" controls poster="thumbnail.png">
+					<source src="pitch.webm" type="video/webm">
+					<source src="pitch.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				  </video> 
+				  <a target="_blank" href="CV_2021.pdf"><button class="btn">DOWNLOAD MY RESUME</button></a>
+				
+			</div>
+			<div class="sep"></div>
+			<div id="footer" class="container">{{ partial "footer.html" . }}</div>
 		</div>
-
-		<div id="about" class="container">
-			<h1>About</h1>
-			<p>HI ! I’M MARTIN, a french student in engineering with a passion for computer science and graphic design.<br>I love to try new things in order to learn more and improve my skills.<br>Getting involved in great projects is my thing, so if you have cool opportunities, contact me !</p>
-			<video width="100%" controls poster="thumbnail.png">
-				<source src="pitch.webm" type="video/webm">
-				<source src="pitch.mp4" type="video/mp4">
-			  Your browser does not support the video tag.
-			  </video> 
-			  <a target="_blank" href="CV_2021.pdf"><button class="btn" style="width:100%">DOWNLOAD MY RESUME</button></a>
-			
-		</div>
-		<div class="sep"></div>
-		<div id="footer" class="container">{{ partial "footer.html" . }}</div>
-	</div>
-
 
 </body>	
 

@@ -3,6 +3,7 @@
 
  /* Style buttons */
  .btn {
+    width: 100%;
     border: solid 2px var(--opcolor);
     color: var(--opcolor);
     padding: 12px 30px;
@@ -10,6 +11,12 @@
     font-size: 13pt;
     font-family: Poppins;
     background-color: rgba(0, 0, 0, 0);
+    margin: 5px 0px;
+}
+
+.btn-dark {
+    border: solid 2px var(--color);
+    color: var(--color);
 }
 
 /* Darker background on mouse-over */
@@ -46,11 +53,11 @@
 .dropdown-content {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-85%);
     background-color: var(--color);
 
     color: var(--opcolor);
-    min-width: 160px;
+    min-width: 350px;
     z-index: 1;
     display: none;
     flex-direction: column;
