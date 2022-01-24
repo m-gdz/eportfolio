@@ -1,7 +1,14 @@
 
 <a href="/">Home</a>
-<a href="{{ "education" | absURL }}">Education</a>
-<a href="{{ "experience" | absURL }}">Experience</a>
+<a href="{{ "education-experience" | absURL }}">Education & Experience</a>
+<div class="dropdown">
+    <span>Leadership & Management</span>
+    <div class="dropdown-content">
+        <a href="">Junior Entreprise (J.E.)</a>
+        <a href="{{ "innovation" | absURL }}">Innovation</a>
+        <a href="{{ "ethics" | absURL }}">Ethics</a>
+    </div>
+</div>
 <a href="{{ "languages" | absURL }}">Languages</a>
 <div class="dropdown">
     <span>More</span>
@@ -11,4 +18,4 @@
         <a href="{{ "travels" | absURL }}">Travels</a>
         <a href="#footer">Contact</a>
     </div>
-    </div>
+</div>
