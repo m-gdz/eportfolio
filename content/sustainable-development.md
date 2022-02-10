@@ -26,6 +26,7 @@ In the end, we discovered through this conference how important the challenges a
 
 <video id="video" width="100%" controls poster="../thumbnail2.png">
 <source src="../sustainable.webm" type="video/webm">
+	<source src="../sustainable.mp4" type="video/mp4">`
 Your browser does not support the video tag.
 </video> 
 
