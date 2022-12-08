@@ -18,3 +18,4 @@ Travelling is one of the most important ways to discover new things and new land
 - London, UK
 - Amsterdam, Netherlands
 - Paris, France
+- Barcelona, Spain

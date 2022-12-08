@@ -86,6 +86,7 @@ html {
 }
 
 
+
 body {
     color:  var(--color);
     margin: 0;
@@ -153,7 +154,12 @@ h2 {
 
 }
 
-@media  (max-width: 667px) {
+
+
+@media only screen and (max-width: 667px) {
+
+    
+
     h1 {
         font-size: 37pt;
         text-align: center;
