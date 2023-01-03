@@ -19,7 +19,7 @@ draft: false
 # Experience
 
 ## SUMMER 2022 / SES Satellites, Luxembourg
-- HbbTV Application Developer Intern - *{{< rawhtml >}}<a href="/internship"> Click here to see full report </a>{{< /rawhtml >}}*
+- HbbTV Application Developer Intern - ***{{< rawhtml >}}<a href="/internship"> Click here to see full report </a>{{< /rawhtml >}}***
 
 ## SUMMER 2019 / SES Satellites, Luxembourg
 - HbbTV Application Developer Intern

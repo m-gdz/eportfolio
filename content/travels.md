@@ -5,7 +5,7 @@ type: "page"
 draft: false
 ---
 
-# Travels
+# International mobility
 Travelling is one of the most important ways to discover new things and new landscapes. That's why I love to travel, whether it's with friends, family, or alone.
 
 ## Places i visited
@@ -19,3 +19,8 @@ Travelling is one of the most important ways to discover new things and new land
 - Amsterdam, Netherlands
 - Paris, France
 - Barcelona, Spain
+
+
+{{< rawhtml >}}
+    <img style="width: 100%; height: auto" src="/map.png" />
+{{< /rawhtml >}}
