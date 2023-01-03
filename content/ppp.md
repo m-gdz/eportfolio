@@ -5,7 +5,7 @@ type: "page"
 draft: false
 ---
 
-# Profesionnal Project
+# Professionnal Project
 
 ## Application
 

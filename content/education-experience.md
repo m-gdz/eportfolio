@@ -7,7 +7,7 @@ draft: false
 
 # Education
 
-## 2018-NOW / INP-ENSEEIHT
+## 2021-NOW / INP-ENSEEIHT
 - A top-ranking engineering graduate school based in Toulouse, France
 
 ## 2018-2021 / Preparatory classes
