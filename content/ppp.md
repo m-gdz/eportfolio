@@ -7,6 +7,16 @@ draft: false
 
 # Professionnal Project
 
+## My life timeline
+
+{{< rawhtml >}}
+<!--
+<iframe src="https://drive.google.com/file/d/1LvF_wT0irkD0FVF9BgAJ3XCr30Iv3Ivz/preview" style="width:100%; aspect-ratio: 16/9; border: solid 2px black;" allow="autoplay"></iframe>
+-->
+<img alt="Roadmap" src="../roadmap.jpg" style="width: 100%;"></img>
+{{< /rawhtml >}}
+
+
 ## Application
 
 ### Job offer
