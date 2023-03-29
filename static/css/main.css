@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 
+/*
 html {
   --scroll-behavior: smooth;
   scroll-behavior: smooth;
-}
+}*/
 
  /* Style buttons */
  .btn {
@@ -50,6 +51,8 @@ html {
     padding-right: calc(50% - var(--container-width) / 2);
     
 }
+
+/*
 .dropdown {
     position: relative;
     display: inline-block;
@@ -69,6 +72,7 @@ html {
     align-items: center;
 }
 
+
 .dropdown a {
     color: var(--opcolor);
 }
@@ -76,6 +80,8 @@ html {
 .dropdown:hover .dropdown-content {
     display: flex;
 }
+*/
+
 
 #topnav {
     display: flex;
@@ -106,6 +112,8 @@ a {
     text-decoration: none;
     color: var(--color);
 }
+
+
 
 h1 {
     font-size: 90pt;
@@ -156,7 +164,7 @@ h2 {
 
 
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 668px) {
 
     
 
@@ -190,15 +198,18 @@ h2 {
         font-size: 10pt;
     }
 
+
+    /*
     .dropdown {
         position: relative;
         display: inline-block;
     }
+    
 
     .dropdown-content {
         position: absolute;
        /* right: 50%;
-        transform: translateX(-90%); */
+        transform: translateX(-90%); 
         background-color: var(--color);
         color: var(--opcolor);
         min-width: 250px;
@@ -207,12 +218,13 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
+    */
 
 
 }    
 
 
-@media only screen and  (min-width: 668px) and (max-width: 900px) {
+@media only screen and  (min-width: 669px) and (max-width: 1040px) {
     h1 {
         font-size: 60pt;
         text-align: center;
@@ -230,18 +242,77 @@ h2 {
 
 }
 
-@media only screen and (max-width: 900px){
-    #topnav {
-        align-items: center;
-        flex-direction: column;
-    }
-}
-
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1041px) {
     :root {
         --container-width: 1000px;
     }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
 
+#hamburger {
+  display: block;
+  cursor: pointer;
+    z-index: 10;
+}
 
+#hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    background-color: var(--opcolor);
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+    z-index: 9;
+}
+
+#menu a {
+    font-size: 20pt;
+    font-weight: bold;
+    color: var(--color);
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-bottom: solid 2px var(--color);
+}
+
+#menu a:hover {
+    background-color: var(--color);
+    color: var(--opcolor);
+}
+
+#menu.active {
+    width: 100%;
+}
+
+#menu.active a {
+    
+}
+
+@media only screen and (max-width: 668px) {
+    #hamburger {
+        display: block;
+    }
+
+    
+
+    #menu.active {
+        width: 100%;
+    }
+}

@@ -136,12 +136,11 @@
 		<div id="background">
 
 			<div id="topnav" class="container">{{ partial "navbar.html" . }}</div>
-			<div class="sep"></div>
 
 
 			<div id="hero" class="container">
 				<h1>MARTIN,<br>ENGINEERING<br>AND DESIGN<br>ENTHUSIAST</h1>
-				<p id='sub'>I’m a 21YO engineering student based in Toulouse, France<br>looking for cool new job opportunities<br>and freelance work.</p>
+				<p id='sub'>I’m a 22YO engineering student based in Toulouse, France<br>looking for cool new job opportunities<br>and freelance work.</p>
 				<span id="scroll"><a href="#about">Scroll to learn more</a></span>
 			</div>
 			<div id="about" class="container">
@@ -152,7 +151,7 @@
 					<source src="pitch.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				  </video> 
-				  <a target="_blank" href="CV_2022.pdf"><button class="btn">DOWNLOAD MY RESUME</button></a>
+				  <a target="_blank" href="CV_2023.pdf"><button class="btn">DOWNLOAD MY RESUME</button></a>
 				
 			</div>
 			<div class="sep"></div>
@@ -165,20 +164,28 @@
 <script>
 const bg = document.getElementById("background");
 let root = document.documentElement;
-window.addEventListener("scroll", function() {
-
-	let scroll = window.pageYOffset;
-
-	if (scroll > window.innerHeight * 2 / 3) {
-		bg.style.backgroundColor = '#F1F1F1';
-		root.style.setProperty('--color','#1F1F1F');
-	}
-	else {
-		bg.style.backgroundColor = 'rgba(0,0,0,0.8)';
-		root.style.setProperty('--color','#F1F1F1');
-	}
-
-});
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.3
+}
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      bg.style.backgroundColor = '#F1F1F1';
+      root.style.setProperty('--color','#1F1F1F');
+    } else {
+								if (entry.boundingClientRect.top > 0) {
+									
+				    bg.style.backgroundColor = 'rgba(0,0,0,0.8)';
+		      root.style.setProperty('--color','#F1F1F1');
+				  } 
+      
+    }
+		
+  });
+}, options);
+observer.observe(document.getElementById('about'));
 </script>
 
 </html>

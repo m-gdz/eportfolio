@@ -24,5 +24,9 @@ $(document).ready(function(){
 });
 
 
-
+$("#hamburger").on('click', function() {
+  console.log("Hamburger clicked");
+  $("#menu").toggleClass("active");
+  $('body').toggleClass('no-scroll');
+});
 

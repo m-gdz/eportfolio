@@ -1,23 +1,48 @@
+<!--
+<input type="checkbox" id="navbar-toggle" />
 
-<a href="/">Home</a>
-<a href="{{ "education-experience" | absURL }}">Education & Experience</a>
-<div class="dropdown">
+<label for="navbar-toggle" class="navbar-toggle-label">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<div class="navbar-menu">
+  <a href="/">Home</a>
+  <a href="{{ "education-experience" | absURL }}">Education & Experience</a>
+  <div class="dropdown">
     <span>Leadership & Management</span>
     <div class="dropdown-content">
-        <a href="{{ "junior-entreprise" | absURL }}">Junior Entreprise (J.E.)</a>
-        <a href="{{ "innovation" | absURL }}">Innovation</a>
-        <a href="{{ "ethics" | absURL }}">Ethics</a>
+      <a href="{{ "junior-entreprise" | absURL }}">Junior Entreprise (J.E.)</a>
+      <a href="{{ "innovation" | absURL }}">Innovation</a>
+      <a href="{{ "ethics" | absURL }}">Ethics</a>
     </div>
-</div>
-<a href="{{ "ppp" | absURL }}">Professionnal Project - PPP</a>
-<div class="dropdown">
+  </div>
+  <div class="dropdown">
     <span>More</span>
     <div class="dropdown-content">
-        <a href="{{ "career-development" | absURL }}">Career development</a>
-        <a href="{{ "travels" | absURL }}">International mobility</a>
-        <a href="{{ "sustainable-development" | absURL }}">Sustainable development</a>  
-        <a href="{{ "internship" | absURL }}">1A Internship</a>
-        <a href="{{ "sports" | absURL }}">Sports</a>
-        <a href="#footer">Contact</a>
+      <a href="{{ "ppp" | absURL }}">Professionnal Project - PPP</a>
+      <a href="{{ "career-development" | absURL }}">Career development</a>
+      <a href="{{ "travels" | absURL }}">International mobility</a>
+      <a href="{{ "sustainable-development" | absURL }}">Sustainable development</a>  
+      <a href="{{ "internship" | absURL }}">1A Internship</a>
+      <a href="{{ "sports" | absURL }}">Sports</a>
+      <a href="#footer">Contact</a>
     </div>
+  </div>
 </div>
+-->
+
+<div id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div id="menu">
+    <a href="/">Home</a>
+    <a href="{{ "education-experience" | absURL }}">Education & Experience</a>
+    <a href="#">More (SOON)</a>
+</div>
+
+<a href="#footer">Contact</a>

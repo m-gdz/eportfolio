@@ -9,6 +9,7 @@ draft: false
 
 ## 2021-NOW / INP-ENSEEIHT
 - A top-ranking engineering graduate school based in Toulouse, France
+- Software Engineering Master's Degree
 
 ## 2018-2021 / Preparatory classes
 - Two-year undergraduate intensive course in mathematics and physics
@@ -17,6 +18,9 @@ draft: false
 - BaccalaurÉAt with honours (major in mathematics and physics)
 
 # Experience
+
+## March 2022 - March 2023 / N7 Consulting, Toulouse
+- Business Manager
 
 ## SUMMER 2022 / SES Satellites, Luxembourg
 - HbbTV Application Developer Intern - ***{{< rawhtml >}}<a href="/internship"> Click here to see full report </a>{{< /rawhtml >}}***
