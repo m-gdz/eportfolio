@@ -1,205 +1,93 @@
 <!-- {{.Site.BaseURL}} -->
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Martin Guidez is a French engineering student with a passion for computer science and graphic design. He is looking for cool new job opportunities and freelance work. Check out his portfolio to learn more.">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Martin Guidez is a French engineering student with a passion for computer science and graphic design. He is looking for cool new job opportunities and freelance work. Check out his portfolio to learn more."
+    />
 
-	<title>Martin Guidez</title>
-	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/main.css" >
-	<link rel="icon" href="favicon.ico">
-	<style>
+    <title>Martin Guidez</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ .Site.BaseURL }}css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ .Site.BaseURL }}css/home.css"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/18a6680942.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+  </head>
+  <body>
+    <video id="bg-video" autoplay loop muted>
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div id="background">
+      <div id="topnav" class="container">{{ partial "navbar.html" . }}</div>
 
-		#background{
-			background-color: rgba(0, 0, 0, 0.8);
-			transition: background-color .5s;
-			transition-timing-function: ease-in-out;
-		}
+      <div id="hero" class="container">
+        <h1>MARTIN,<br />ENGINEERING<br />AND DESIGN<br />ENTHUSIAST</h1>
+        <p id="sub">
+          I’m a 22YO engineering student based in Toulouse, France<br />looking
+          for cool new job opportunities<br />and freelance work.
+        </p>
+        <span id="scroll"><a href="#about">Scroll to learn more</a></span>
+      </div>
+      <div id="about" class="container">
+        <h1>About</h1>
+        <p>
+          HI ! I’M MARTIN, a french student in engineering with a passion for
+          computer science and graphic design.<br />I love to try new things in
+          order to learn more and improve my skills.<br />Getting involved in
+          great projects is my thing, so if you have cool opportunities, contact
+          me !
+        </p>
+        <video id="video" width="100%" controls poster="thumbnail.png">
+          <source src="pitch.webm" type="video/webm" />
+          <source src="pitch.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <a target="_blank" href="CV_2023.pdf"
+          ><button class="btn">DOWNLOAD MY RESUME</button></a
+        >
+      </div>
+      <div class="sep"></div>
+      <div id="footer" class="container">{{ partial "footer.html" . }}</div>
+    </div>
+  </body>
 
-		body{
-			/*background-image: url(background.gif); */
-			background-size: cover;
-			background-position: center;
-			background-attachment: fixed;
-			transition: color .5s;
-			transition-timing-function: ease-in-out;
-
-
-
-		}
-
-
-		h2 {
-		position: relative;
-		overflow: hidden;
-		}
-
-		h2 span {
-		display: inline-block;
-		vertical-align: baseline;
-		zoom: 1;
-		*display: inline;
-		*vertical-align: auto;
-		position: relative;
-		padding: 0 10px 0 0;
-		}
-
-		h2 span:before, h2 span:after {
-		content: '';
-		display: block;
-		width: 1000px;
-		position: absolute;
-		top: 0.73em;
-		border-top: 2px solid var(--color);
-		transition: border-top-color 0.5s;
-		transition-timing-function: ease-in-out;
-		}
-
-		h2 span:before {
-		right: 100%;
-		}
-
-		h2 span:after {
-		left: 100%;
-		}
-
-		#hero {
-
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-
-		text-align: right;
-		height: 100vh;
-		}
-
-		#hero p {
-		margin: 0;
-		}
-
-		#about {
-		padding-top: 150px;
-		margin-bottom: 200px;
-		} 
-
-		#about h1 {
-		margin-bottom: 30px;
-		}
-
-		#scroll {
-			text-align: left; 
-			margin-top: 15px; 
-			font-size: 10pt; 
-			font-style: italic;
-		}
-
-		@media  (max-width: 900px) {
-			#scroll {
-				text-align: center; 
-			}	
-			#hero h1 {
-				margin-bottom: 10px;
-			}
-		}	
-
-		/*
-		#bg {
-		  position: fixed; 
-		  z-index: -3;
-		  top: -50%; 
-		  left: -50%; 
-		  width: 200%; 
-		  height: 200%;
-		}
-
-		#bg img {
-		  position: absolute; 
-		  top: 0; 
-		  left: 0; 
-		  right: 0; 
-		  bottom: 0; 
-		  margin: auto; 
-		  min-width: 50%;
-		  min-height: 50%;
-		}
-		*/
-
-		#bg-video {
-			position: fixed;
-			z-index: -3;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-
-		
-	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/18a6680942.js" crossorigin="anonymous"></script> 
-
-
-
-</head>
-<body>
-		<video id="bg-video" autoplay loop muted>
-		  <source src="background.mp4" type="video/mp4">
-		</video>
-		<div id="background">
-
-			<div id="topnav" class="container">{{ partial "navbar.html" . }}</div>
-
-
-			<div id="hero" class="container">
-				<h1>MARTIN,<br>ENGINEERING<br>AND DESIGN<br>ENTHUSIAST</h1>
-				<p id='sub'>I’m a 22YO engineering student based in Toulouse, France<br>looking for cool new job opportunities<br>and freelance work.</p>
-				<span id="scroll"><a href="#about">Scroll to learn more</a></span>
-			</div>
-			<div id="about" class="container">
-				<h1>About</h1>
-				<p>HI ! I’M MARTIN, a french student in engineering with a passion for computer science and graphic design.<br>I love to try new things in order to learn more and improve my skills.<br>Getting involved in great projects is my thing, so if you have cool opportunities, contact me !</p>
-				<video id="video" width="100%" controls poster="thumbnail.png">
-					<source src="pitch.webm" type="video/webm">
-					<source src="pitch.mp4" type="video/mp4">
-				  Your browser does not support the video tag.
-				  </video> 				  <a target="_blank" href="CV_2023.pdf"><button class="btn">DOWNLOAD MY RESUME</button></a>
-				
-			</div>
-			<div class="sep"></div>
-			<div id="footer" class="container">{{ partial "footer.html" . }}</div>
-		</div>
-
-</body>	
-
-<script type="text/javascript" src="script.js"></script>
-<script>
-const bg = document.getElementById("background");
-let root = document.documentElement;
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.3
-}
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      bg.style.backgroundColor = '#F1F1F1';
-      root.style.setProperty('--color','#1F1F1F');
-    } else {
-								if (entry.boundingClientRect.top > 0) {
-									
-				    bg.style.backgroundColor = 'rgba(0,0,0,0.8)';
-		      root.style.setProperty('--color','#F1F1F1');
-				  } 
-      
-    }
-		
-  });
-}, options);
-observer.observe(document.getElementById('about'));
-</script>
-
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    const bg = document.getElementById("background");
+    let root = document.documentElement;
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          bg.style.backgroundColor = "#F1F1F1";
+          root.style.setProperty("--color", "#1F1F1F");
+        } else {
+          if (entry.boundingClientRect.top > 0) {
+            bg.style.backgroundColor = "rgba(0,0,0,0.8)";
+            root.style.setProperty("--color", "#F1F1F1");
+          }
+        }
+      });
+    }, options);
+    observer.observe(document.getElementById("about"));
+  </script>
 </html>
-

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+:root {
+  --color: #F1F1F1;
+  --opcolor : #1F1F1F;
+  --container-padding: 80px;
+  --container-width: calc(100% - var(--container-padding) * 2);
+}
 
-/*
-html {
-  --scroll-behavior: smooth;
-  scroll-behavior: smooth;
-}*/
-
- /* Style buttons */
- .btn {
+/* Style buttons */
+.btn {
     width: 100%;
     border: solid 2px var(--opcolor);
     color: var(--opcolor);
@@ -30,58 +30,17 @@ html {
     background-color: rgba(0, 0, 0, 0.1);
 } 
 
-
-:root {
-  --color: #F1F1F1;
-  --opcolor : #1F1F1F;
-  --container-padding: 80px;
-  --container-width: calc(100% - var(--container-padding) * 2);
-}
-
 @font-face {
  font-family: "WASHINGTON";
  src: url("/fonts/WASHINGTON.ttf") format("truetype")
 }
-
 
 .container {
     box-sizing: border-box;
     width: 100%;
     padding-left: calc(50% - var(--container-width) / 2);
     padding-right: calc(50% - var(--container-width) / 2);
-    
 }
-
-/*
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--color);
-
-    color: var(--opcolor);
-    min-width: 250px;
-    z-index: 1;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.dropdown a {
-    color: var(--opcolor);
-}
-
-.dropdown:hover .dropdown-content {
-    display: flex;
-}
-*/
-
 
 #topnav {
     display: flex;
@@ -91,29 +50,21 @@ html {
     color: var(--color);
 }
 
-
-
 body {
     color:  var(--color);
     margin: 0;
-
     font-size: 13pt;
     font-family: 'Poppins',sans-serif;
     font-weight: normal;
-
     text-transform: uppercase;
     -webkit-font-smoothing:  antialiased;
     -moz-osx-font-smoothing: antialiased;
-
-    
 }
 
 a {
     text-decoration: none;
     color: var(--color);
 }
-
-
 
 h1 {
     font-size: 90pt;
@@ -128,7 +79,6 @@ h2 {
     font-size: 18pt;
     font-weight: 700;
 }
-
 
 .sep{
     width: 100vw;
@@ -152,22 +102,15 @@ h2 {
     flex-direction: row;
     width: 300px;
     justify-content: space-between;
-
 }
 
 #links > a  {
     color: inherit;
     font-weight: bold;
     font-size: 18pt;
-
 }
 
-
-
 @media only screen and (max-width: 668px) {
-
-    
-
     h1 {
         font-size: 37pt;
         text-align: center;
@@ -185,44 +128,16 @@ h2 {
     :root {
         --container-width: 89%;
     }
-
     h2 {
         font-size: 12pt;
     }  
-
     body {
         font-size: 10pt;
     }
-
     .btn {
         font-size: 10pt;
     }
-
-
-    /*
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
-
-    .dropdown-content {
-        position: absolute;
-       /* right: 50%;
-        transform: translateX(-90%); 
-        background-color: var(--color);
-        color: var(--opcolor);
-        min-width: 250px;
-        z-index: 1;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-    */
-
-
-}    
-
+}
 
 @media only screen and  (min-width: 669px) and (max-width: 1040px) {
     h1 {
@@ -239,7 +154,6 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-
 }
 
 @media only screen and (min-width: 1041px) {
@@ -289,10 +203,6 @@ h2 {
     width: 24px;
 }
 
-
-
-
-
 #menu {
     display: flex;
     flex-direction: column;
@@ -332,14 +242,28 @@ h2 {
     
 }
 
-@media only screen and (max-width: 668px) {
-    #hamburger {
-        display: block;
-    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-    
+.dropdown-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color);
+    color: var(--opcolor);
+    min-width: 250px;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
 
-    #menu.active {
-        width: 100%;
-    }
+.dropdown a {
+    color: var(--opcolor);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
 }
