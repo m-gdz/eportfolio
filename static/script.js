@@ -28,6 +28,7 @@ $("#hamburger").on('click', function() {
   console.log("Hamburger clicked");
   $("#menu").toggleClass("active");
   $("#hamburger").toggleClass("active");
+  $(".liquid-path").toggleClass("animate");
   $('body').toggleClass('no-scroll');
 });
 
